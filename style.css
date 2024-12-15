@@ -1,0 +1,108 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Banner Styling */
+.banner {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/services.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: rgb(163, 30, 163);
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-content h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #202ef5; /* Orange background */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: rgb(235, 240, 243);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #0e89cf;
+    border-radius: 5px;
+}
+.menu {
+    display: none;
+}
+
+.navbar ul li:hover .menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #154bdd;
+}
+.menu ul{
+    display: block;
+    margin: 0.1px;
+}
+
+
+/* Flex Container */
+.button-container {
+    display: flex;
+    margin-inline: 20%;
+    
+    flex-wrap: wrap; /* Wrap buttons to next line if needed */
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+    padding: 30px;
+}
+
+/* Button Styling */
+.flex-button {
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(8, 2, 2);
+    background-color: #a4ac35;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.flex-button:hover {
+    background-color: #adce1a;
+    transform: scale(1.20);
+}
