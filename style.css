@@ -13,7 +13,7 @@ body {
 
 /* Banner Styling */
 .banner {
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/services.jpg'); /* Replace with your image URL */
+    background-image:url('services.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
     position: relative;
